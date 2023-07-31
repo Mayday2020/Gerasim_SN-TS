@@ -1,16 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 
-function Header() {
+export function Header() {
+    console.log('Header rendered')
     return (
         <div>
-            <ul>
-                <li><a href={'#'}>Home</a></li>
-                <li><a href={'#'}>News</a></li>
-                <li><a href={'#'}>Messages</a></li>
-                <li><a href={'#'}>Settings</a></li>
-            </ul>
+            Header
         </div>
     );
 }
-
-export default Header;
