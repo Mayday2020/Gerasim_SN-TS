@@ -6,7 +6,7 @@ import s from './navbar.module.css'
 const Navbar: React.FC<any> = (props) => {
     console.log('Navbar rendered')
     return (
-        <div className={s.link}>
+        <div className={s.container}>
             <a href="#">Navbar</a>
         </div>
     )

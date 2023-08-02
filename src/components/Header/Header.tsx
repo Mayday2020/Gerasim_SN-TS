@@ -1,9 +1,10 @@
 import * as React from 'react';
+import s from './header.module.css'
 
-export function Header() {
+export default function Header() {
     console.log('Header rendered')
     return (
-        <div>
+        <div className={s.container}>
             Header
         </div>
     );

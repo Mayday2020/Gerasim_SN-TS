@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css';
-import {Header} from "./components/Header/Header";
+import s from './app.module.css';
+import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
 
@@ -10,8 +10,10 @@ const App: React.FC<any> = (props) => {
     return (
         <div>
             <Header/>
-            <Navbar/>
-            <Main/>
+            <div className={s.container}>
+                <Navbar/>
+                <Main/>
+            </div>
         </div>
     );
 }
