@@ -1,4 +1,17 @@
 .container {
     background-color: darkgray;
-
+    padding: 5px;
+    margin-right: 5px;
+    min-width: 20%;
+}
+.link {
+    list-style: none;
+    padding: 0;
+}
+.link li a {
+    text-decoration: none;
+    color: white;
+}
+.link li a:hover {
+    color: lightgrey;
 }

@@ -8,7 +8,7 @@ import Main from "./components/Main/Main";
 const App: React.FC<any> = (props) => {
     console.log('App rendered')
     return (
-        <div>
+        <div className={s.mainContainer}>
             <Header/>
             <div className={s.container}>
                 <Navbar/>
