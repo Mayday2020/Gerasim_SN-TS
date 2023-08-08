@@ -1,5 +1,6 @@
 import profileReducer, {addPostAC, updateNewPostTextAC} from "./profileReducer";
 import dialogsReducer, {addMessageAC, onChangeMessageAC} from "./dialogsReduser";
+import {v1} from "uuid";
 
 // Types
 export type UserType = {
@@ -14,7 +15,7 @@ export type UserType = {
     uniqueUrlName: string
 }
 export type PostDataType = {
-    id: number
+    id: string
     message: string
     likes: number
 }
@@ -62,10 +63,10 @@ let store: StoreType = {
     _state: {
         profilePage: {
             postsData: [
-                {id: 1, message: 'That\'s MyPost', likes: 2},
-                {id: 2, message: 'Hello!!', likes: 3},
-                {id: 3, message: 'Tinkoff!', likes: 89},
-                {id: 4, message: 'Zzz...', likes: 5},
+                {id: v1(), message: 'That\'s MyPost', likes: 2},
+                {id: v1(), message: 'Hello!!', likes: 3},
+                {id: v1(), message: 'Tinkoff!', likes: 89},
+                {id: v1(), message: 'Zzz...', likes: 5},
             ],
             newPostText: 'text'
         },

@@ -5,6 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FaceIcon from '@mui/icons-material/Face';
+import s from './myPost.module.css'
 
 type PostType = {
     message: string
@@ -13,14 +14,14 @@ type PostType = {
 
 const MyPost: React.FC<PostType> = (props) => {
     return (
-        <Box>
+        <Box className={s.post}>
             <ListItem>
                 <ListItemIcon>
                     <FaceIcon />
                 </ListItemIcon>
                 <ListItemText primary={props.message} />
                 <ListItemIcon>
-                    <FavoriteBorderIcon /> {props.likes}
+                    <FavoriteBorderIcon />{props.likes}
                 </ListItemIcon>
             </ListItem>
         </Box>

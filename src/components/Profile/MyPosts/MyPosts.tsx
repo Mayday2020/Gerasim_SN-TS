@@ -1,11 +1,9 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import MyPost from "./MyPost/MyPost";
-import {PostDataType} from "../../../redux/store";
+import {MyPostType} from "./MyPostsContainer";
 
-type MyPostType = {
-    postsData: PostDataType[]
-}
+
 const MyPosts: React.FC<MyPostType> = (props) => {
     return (
         <Box>

@@ -1,22 +1,18 @@
-import React from "react";
+import React, {ChangeEvent} from "react";
 import Box from "@mui/material/Box";
-import {updateNewPostTextAC} from "../../../redux/profileReducer";
+import {NewPostTextType} from "./NewPostContainer";
 
-type NewPostType = {
-    newPostText: string
-    updateNewPostText: (ref: any) => void
-    addPost: () => void
-}
 
-const NewPost: React.FC<NewPostType> = (props) => {
+const NewPost: React.FC<NewPostTextType> = (props) => {
 
-    let postMessageRef = React.createRef<HTMLTextAreaElement>()
+    const onChangePostHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
+        props.updateNewPostText(e.currentTarget.value)
+    }
+
     return (
         <div>
             <Box p={2}>
-                <textarea ref={ postMessageRef }
-                          onChange={ () => props.updateNewPostText(postMessageRef) }
-                          value={ props.newPostText }>
+                <textarea onChange={ onChangePostHandler } value={props.newPostText}>
                 </textarea>
                 <div>
                     <button onClick={ props.addPost }>Add post</button>
