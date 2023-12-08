@@ -1,5 +1,6 @@
 import React from "react";
 import s from './navbar.module.css'
+import {Link} from "react-router-dom";
 
 
 
@@ -8,9 +9,9 @@ const Navbar: React.FC<any> = (props) => {
     return (
         <div className={s.container}>
             <ul className={s.link}>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Users</a></li>
+                <li><Link to="/profile">Profile</Link></li>
+                <li><Link to="/messages">Messages</Link></li>
+                <li><Link to="/users">Users</Link></li>
             </ul>
         </div>
     )

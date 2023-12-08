@@ -1,10 +1,18 @@
-import React, {useState} from 'react'
-import {Grid, Typography} from "@mui/material";
+import React from 'react'
+/*import {Grid, Typography} from "@mui/material";
 import DialogsItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
-import {DialogsStateType} from "../../redux/store";
+import {DialogsStateType} from "../../redux/store";*/
 
-export type DialogsType = {
+const Dialogs = () => {
+    console.log('Dialogs rendered')
+    return <div>
+
+    </div>
+}
+
+
+/*export type DialogsType = {
     state: DialogsStateType
     addMessage: () => void
     onChangeMessage: (ref: any) => void
@@ -35,6 +43,6 @@ const Dialogs: React.FC<DialogsType> = (props) => {
             </Grid>
         </div>
     )
-}
+}*/
 
 export default Dialogs

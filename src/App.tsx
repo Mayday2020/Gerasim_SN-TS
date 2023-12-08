@@ -6,7 +6,6 @@ import Main from "./components/Main/Main";
 
 
 const App: React.FC<any> = () => {
-    console.log('App rendered')
     return (
         <div className={s.mainContainer}>
             <Header/>

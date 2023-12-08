@@ -27,7 +27,6 @@ const Profile: React.FC<any> = () => {
     let addPost = () => {
         let newPost = { id: v1(), message: newText, likes: 0}
         setPosts([...posts, newPost])
-        console.log(posts)
     }
     return (
         <div>

@@ -1,4 +1,5 @@
 import React from 'react'
+/*
 import {DialogDataType, DialogsStateType, StoreType} from "../../redux/store";
 import {addMessageAC, onChangeMessageAC} from "../../redux/dialogsReduser";
 import Dialogs, {DialogsType} from "./Dialogs";
@@ -6,7 +7,7 @@ import {connect, ConnectedComponent} from "react-redux";
 import store from '../../redux/redux-store'
 
 //type DialogsContainerType = ConnectedComponent<React.FC<DialogsType>, Omit<DialogsType & {children?: React.ReactNode}, "addMessage" | "onChangeMessage">>
-/*let mapStateToProps = (state: DialogsStateType): { dialogsData: DialogDataType[] } => {
+/!*let mapStateToProps = (state: DialogsStateType): { dialogsData: DialogDataType[] } => {
     return {
         dialogsData: state.dialogsData
     }
@@ -20,7 +21,7 @@ let mapDispatchToProps = (dispatch: any) => {
             dispatch(updateNewMessageBodyAC(ref.current?.value))
         }
     }
-}*/
+}*!/
 
 const DialogsContainer = () => {
     let newDialogsData = store.getState().messagesPage
@@ -32,4 +33,4 @@ const DialogsContainer = () => {
     )
 }
 
-export default DialogsContainer
+export default DialogsContainer*/
