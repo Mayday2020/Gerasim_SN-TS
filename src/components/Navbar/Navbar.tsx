@@ -10,7 +10,7 @@ const Navbar: React.FC<any> = (props) => {
         <div className={s.container}>
             <ul className={s.link}>
                 <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/messages">Messages</Link></li>
+                <li><Link to="/dialogs">Messages</Link></li>
                 <li><Link to="/users">Users</Link></li>
             </ul>
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import s from './main.module.css'
 import Profile from "../Profile/Profile";
-import Dialogs from "../Dialogs/Dialogs";
 import { Routes, Route } from "react-router-dom";
+import DialogsContainer from "../Dialogs/DialogsContainer";
 
 const Main: React.FC<any> = () => {
     console.log('Main rendered')
@@ -11,10 +11,8 @@ const Main: React.FC<any> = () => {
             Main
                 <Routes>
                     <Route path='/profile' element={<Profile/>} />
-                    <Route path='/dialogs' element={<Dialogs/>} />
+                    <Route path='/dialogs' element={<DialogsContainer/>}/>
                 </Routes>
-            {/*<Profile />*/}
-            {/*<Dialogs/>*/}
         </div>
     )
 }
